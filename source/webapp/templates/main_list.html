@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>ETH:</h1>
+    <p>Symbol: {{ symbol }}</p>
+    {% if current_price != previous_price %}
+        <h2> Ethereum's price has changed: </h2>
+        <p>Current price: {{ current_price }}</p>
+        <p>One hour ago price: {{ previous_price }}</p>
+        <p>Changes: {{ ans }}</p>
+    {% else %}
+        <h2> Ethereum's price: </h2>
+        <p>Current price: {{ current_price }}</p>
+    {% endif %}
+</body>
+</html>
